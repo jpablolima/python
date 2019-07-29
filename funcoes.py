@@ -77,8 +77,47 @@ def media(l):
 
 # Variaveis Globais e Locais
 
-empresa="Liga da Justiça LTDA"  
+""" EMPRESA="Liga da Justiça LTDA"  
 def imprime_cabecalho():
-    print(empresa)
-    print("-" * len(empresa))
+    print(EMPRESA)
+    print("-" * len(EMPRESA))
  
+ """
+
+""" a = 5
+def muda_e_imprime():
+    a=7
+    print('A dentro da função: %d' % a)
+print('A antes de mudar: %d' % a)
+muda_e_imprime()
+print('A depois de mudar %d' % a) """
+
+## Funções Recursivas
+## Funções Recursivas Fatorial
+
+
+""" 
+def fatorial(n):
+    print('Calculando fatorial de %d' %n)
+    if n==0 or n == 1:
+        print('Fatorial de %d = 1' %n)
+        return 1
+    else:
+        fat = n*fatorial(n-1)
+        print('fatorial de %d = %d' %(n, fat))
+    return fat
+fatorial(8)            
+   """
+
+## Validação 
+""" 
+while True:
+    v=int(input('Digite um valor entre 0 e 10:'))
+    if v <0 or v > 10:
+        print( 'Valor inválido!')
+    else:
+        break    """
+
+# Função Lambda
+""" a = lambda x: x*2
+print(a(3))         """
