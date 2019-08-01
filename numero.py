@@ -9,10 +9,24 @@ for linha in arquivo.readlines():
 arquivo.close()     """
 
 # Impressão dos parametros passados na linha de comando
-
+""" 
 import sys
 print("números de parâmetros: %d" % len(sys.argv))
 for n,p in enumerate(sys.argv):
     print('Parámetros %d = %s' % (n,p))
+ """
 
 
+# Geração de arquivos
+#Gravação em arquivos diferentes
+
+
+impares=open('impares.txt','w')
+pares=open('pares.txt','w')
+for n in range(0,1000):
+    if n % 2 == 0:
+        pares.write('%d\n' % n)
+    else:
+        impares.write('%d\n' % n)
+impares.close()
+pares.close()            
