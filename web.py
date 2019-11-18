@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 pagina=open('pagina.html','w', encoding='utf-8')
 pagina.write('<!DOCTYPE html>\n')
 pagina.write('<html lang=\'pt-BR\'>\n')

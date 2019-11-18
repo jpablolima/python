@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 LARGURA = 79
 entrada=open('entrada.txt')
 for linha in entrada.readline():
